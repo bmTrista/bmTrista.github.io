@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#homepage {
+    background-image: url('background\ 1.jpg');
+    
+}
+
+#week2 {
+    background-image: url('background\ 2.jpg');
+}
+
+#week3 {
+    background-image: url('background\ 3.jpg');
+}
+
+
+
+ .content {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ .content h1{
+    padding: 100px 510px;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120px;
+ }
+
+ .content p{
+    padding: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+ }
+
+
+
+
+ .answer {
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     margin: auto;
+ }
+.Q{
+    max-width: 50%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+ }
+.first {
+    align-self: flex-start;
+    background-color: #343333;
+}
+
+.second {
+    align-self: flex-end;
+    background-color: #414242;
+}
+
+
+
+
+
+
+
