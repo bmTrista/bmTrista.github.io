@@ -63,6 +63,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -113,6 +114,34 @@ nav ul li a {
     color: red;
     opacity: 1;
 }
+/* Summary：
+- The .container class styles the main container of the page. 
+It uses flexbox to align items in a column,centered both vertically and horizontally. 
+The container takes up the full width of its parent and expands to fill available space. 
+This layout ensures that the content is well-organized and centered on the page,
+providing a clean and balanced appearance.
+
+- The .image-grid class styles a section to display images in a grid layout. 
+It defines a grid with three columns, each taking up an equal fraction of the available space. 
+The grid-gap property adds space between the grid items,enhancing the visual separation and readability. 
+The images are centered within their grid cells,and a top margin is added to provide spacing from content above. 
+This layout creates a visually appealing and well-organized display for multiple images.
+
+- The .image-container class styles individual containers for each image. 
+Each container has a fixed width and height of 350px and is positioned relative to allow absolute positioning of child elements. 
+This setup provides a consistent and uniform appearance for all images in the grid.
+
+- The .image-container::after class uses a pseudo-element to overlay a gray heart icon on each image container. 
+The heart icon is positioned in the center of the container using absolute positioning and transform properties. 
+Its opacity is initially set to 0, making it invisible, with a transition effect for smooth changes in opacity.
+
+- The .image-container:hover::after class changes the opacity of the heart icon to 1 when the image container is hovered over. 
+This makes the heart icon visible, providing a visual cue for interactivity.
+
+- The .image-container.liked::after class changes the heart icon's color to red and sets its opacity to 1 when the container has the "liked" class.
+ This indicates that the image has been liked, providing a visual feedback to the user.
+ 
+*/
 
 footer {
     background-color: #9f866a;
