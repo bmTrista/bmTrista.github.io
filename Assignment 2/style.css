@@ -102,3 +102,35 @@ footer {
     font-size: 20px;
     margin-top: 50px;
 }
+
+/* summary: 
+The provided CSS styles define a web page's overall design and layout.
+
+- root: This section sets custom properties for the primary background,
+text,and main text colour. 
+
+- body: The body uses a flexbox to align content vertically and horizontally centred with a background image that covers the entire viewport,
+ensuring the page occupies at least the full height of the screen.
+
+- header: The header uses a serif font styled with a specific colour and large font size. 
+It includes padding and letter spacing to enhance readability and visual appeal.
+
+- nav: The navigation bar is fixed to the right side and vertically centred. 
+It includes links with a khaki background styled to appear vertically with a unique font and colour scheme.
+
+- image-container: This class styles the image container with a circular border,padding, and a subtle box shadow for a polished look.
+
+- main-image: The images within the container are circular,
+with hover effects to scale up and apply a grayscale filter, adding an interactive element.
+
+- a: Links are styled with no text decoration.
+
+- central: The main content area is flexible enough to fill the remaining space on the page. 
+
+- footer: The footer is styled with a background colour, centred text, and specified height,
+providing a cohesive end section to the page.
+
+Overall,
+the design creates a visually appealing and interactive web page with a consistent colour scheme,
+and typography centred around the site's primary theme.
+*/
