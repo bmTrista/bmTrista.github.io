@@ -71,6 +71,13 @@ nav ul li a {
     flex: 1;
     width: 100%;
 }
+/* 
+Summary:
+The .container class styles the main container of the page. 
+It uses flexbox to align items in a column, centered both vertically and horizontally. 
+The container takes up the full width of its parent and expands to fill available space. 
+This layout ensures that the content is well-organized and centered on the page, providing a clean and balanced appearance.
+*/
 
 .media-player {
     width: 80%;
@@ -78,12 +85,26 @@ nav ul li a {
     margin: 20px auto;
     text-align: center;
 }
+/* 
+Summary:
+The .media-player class styles the section containing the video player. 
+It sets the width to 80% of the parent container, with a maximum width of 800px. 
+The section is centered horizontally with automatic margins and provides a 20px margin at the top and bottom. 
+This layout ensures the video player is prominently displayed and visually balanced.
+*/
 
 .media-player video {
     width: 100%;
     border-radius: 30px;
     display: block;
 }
+/* 
+Summary:
+The .media-player video class styles the video element within the media player section. 
+The video takes up 100% of the width of its container, ensuring it is fully responsive. 
+The border-radius property gives the video rounded corners, enhancing the visual appeal. 
+The video is displayed as a block-level element.
+*/
 
 .custom-controls {
     display: flex;
@@ -91,11 +112,24 @@ nav ul li a {
     justify-content: center;
     margin-top: 10px;
 }
+/* 
+Summary:
+The .custom-controls class styles the custom control buttons for the media player. 
+It uses flexbox to align the buttons centrally both vertically and horizontally. 
+A top margin of 10px is added to provide space between the video element and the control buttons. 
+This layout ensures the control buttons are well-organized and easily accessible.
+*/
 
 button.speed-btn {
     font-size:25px;
     padding: 21px;
 }
+/* 
+Summary:
+The button.speed-btn class styles the playback speed control buttons. 
+It sets the font size to 25px and adds padding of 21px to make the buttons larger and more clickable. 
+This enhances the usability of the playback speed controls.
+*/
 
 .progress-bar {
     flex: 1;
@@ -105,6 +139,14 @@ button.speed-btn {
     margin-top: 10px;
     overflow: hidden;
 }
+/* 
+Summary:
+The .progress-bar class styles the progress bar element. 
+It uses flexbox to allow the progress bar to grow and fill available space. 
+The background color is set to a light gray (#ccc), and the height is 10px with rounded corners. 
+A top margin of 10px is added to provide space between the controls and the progress bar. 
+The overflow property is set to hidden to ensure the progress bar fill stays within bounds.
+*/
 
 #progress-bar-fill {
     display: block;
@@ -112,6 +154,13 @@ button.speed-btn {
     background-color: #4caf50;
     width: 0;
 }
+/* 
+Summary:
+The #progress-bar-fill class styles the fill element of the progress bar. 
+It is displayed as a block-level element, taking up the full height of its container. 
+The background color is set to green (#4caf50) to indicate progress visually. 
+The initial width is set to 0, and it will expand based on the video's current time.
+*/
 
 footer {
     background-color: #9f866a;
@@ -122,3 +171,10 @@ footer {
     font-size: 20px;
     margin-top: auto;
 }
+/* 
+Summary: 
+The footer class styles the footer section of the page. 
+It has a background color of light brown (#9f866a) and uses a sans-serif font (Arial, Helvetica). 
+The text is centered, and the footer takes up the full width of its parent container with a height of 120px. 
+The font size is set to 20px, and the margin-top is set to auto to push the footer to the bottom of the page.
+*/
