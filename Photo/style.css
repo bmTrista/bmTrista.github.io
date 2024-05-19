@@ -80,11 +80,38 @@ nav ul li a {
     margin-top: 20px;
 }
 
-.image-grid img {
+.image-container {
+    position: relative;
     width: 350px;
     height: 350px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 50px;
+}
+
+.image-container::after {
+    content: '❤';
+    font-size: 50px;
+    color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover::after {
+    opacity: 1;
+}
+
+.image-container.liked::after {
+    color: red;
+    opacity: 1;
 }
 
 footer {

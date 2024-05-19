@@ -92,6 +92,11 @@ nav ul li a {
     margin-top: 10px;
 }
 
+button.speed-btn {
+    font-size:25px;
+    padding: 21px;
+}
+
 .progress-bar {
     flex: 1;
     background-color: #ccc;
