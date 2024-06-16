@@ -1,9 +1,23 @@
+/* 
+This CSS code styles the interactive content block of a webpage,
+featuring a header and three main content areas represented by dynamic image stacks.
+ */
 body {
     margin: 0;
     font-family: 'Space Grotesk', Arial, sans-serif;
     text-align: center;
     background-color: rgb(243, 228, 208);
 }
+/* 
+Description:
+- Set the margin to 0 to ensure a full-width layout,
+maximizing the use of available screen space. 
+- Utilize 'Space Grotesk' and Arial fonts to convey a modern,
+professional aesthetic,enhancing the formal presentation of the content. 
+- Center the text alignment and apply an RGB(243, 228, 208) background color,
+creating a soft and clean visual appeal. 
+This design choice highlights the content and allows users to quickly focus on the main sections of the page.
+*/
 
 header {
     margin-top: 0px;
@@ -12,31 +26,40 @@ header {
 .title-image {
     width: 80%;
     max-width: 10000px;
-    /* 增大标题图片 */
+    
 }
+/* 
+- Ensures no top margin. 
+- Styles the title image to occupy 80% of the container width,
+with a high maximum width to ensure responsiveness.
+*/
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    /* 增大内容块的上间距 */
+    
 }
 
 .content-block {
     display: flex;
     justify-content: center;
     margin: 0px;
-    /* 增大内容块之间的间距 */
+    
 }
+/* 
+Main Content Layout: Use flexbox for a vertical column layout,
+ensuring the image stacks are horizontally centered.
+ */
 
 .image-stack {
     position: relative;
     margin: 100px;
     width: 400px;
-    /* 增大每块内容的宽度 */
+    
     height: 400px;
-    /* 增大每块内容的高度 */
+    
 }
 
 .image-stack img {
@@ -80,6 +103,21 @@ main {
     left: 80px;
     transform: rotate(15deg);
 }
+/* 
+Image Stack Styling: 
+Set a relative position with a 100px margin around each stack. Ensure each image stack is 400px by 400px,
+making each stack uniform. 
+
+Image Styling: 
+Set images to absolute positioning within the image stack. 
+Ensure images fill the full width and height of the stack,
+with smooth transitions for transform, top, and left properties. 
+
+Main Image and Stacked Images: 
+The main image has a higher z-index to appear on top. 
+Stacked images have specific top, left, and rotation settings to create a layered, dynamic visual effect. 
+The transition effects ensure smooth animation when the image positions change.
+ */
 
 .image-stack .overlay {
     position: absolute;
@@ -98,7 +136,7 @@ main {
     transition: opacity 0.3s;
     z-index: 2;
     box-sizing: border-box;
-    /* 确保内边距和边框计算在内 */
+    
 }
 
 
@@ -107,12 +145,19 @@ main {
     font-size: 20px;
     color: #ddd;
 }
+/* 
+Positioned absolutely to cover the entire image stack. Styled with a semi-transparent black background, white text,
+and centered flexbox alignment. 
+The font size is set to 50px for the main overlay text and 20px for the smaller text,
+making it highly visible. 
+Initially set to be fully transparent, becoming opaque on hover.
+*/
 
 .image-stack:hover img {
     transform: rotate(0deg) scale(1.1);
     top: 0;
     left: 0;
-    /* 恢复到初始位置 */
+
 }
 
 .image-stack:hover img.stacked-image {
@@ -129,3 +174,22 @@ main {
     text-decoration: none;
     color: inherit;
 }
+/* 
+Hover Effects: 
+When hovering over the image stack,
+all images rotate back to 0 degrees and scale up to 110%,
+moving to their original positions. 
+The overlay’s opacity transitions to fully opaque,
+revealing the text and small text. 
+
+Link Styling: 
+Ensures that links are styled with no text decoration and inherit the color of the parent element,
+keeping the focus on the visual content. 
+
+Interactive Features: 
+The overlay text guides users to click for more details,
+with a smooth hover effect ensuring a seamless user experience. 
+The small text within the overlay provides additional information or prompts for users. 
+The design aids in highlighting featured products or collections,
+drawing user attention effectively through visual hierarchy and dynamic interactions.
+*/
